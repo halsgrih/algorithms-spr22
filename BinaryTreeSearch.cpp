@@ -47,7 +47,7 @@ void inorder(node* x) {
 	}
 }
 
-bool search(node* root, int data, int l, int r) {
+bool search(node* root, int data) {
 	if (root == NULL) return false;
 	else if (root->value == data) return true;
 	else if (data <= root->value) return search(root->left, data);
