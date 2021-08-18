@@ -16,8 +16,7 @@ void rabinkarpmatcher(int T[], int P[], int n, int m, int d){
     int p = 0, t0 = 0, ts = 0;
     for (int i = 0; i < m; i++){
         p = d*p + P[i];
-        t0 = d*t0 + T[i];
-        
+        t0 = d*t0 + T[i];    
     }
     ts = t0;
     for (int s = 0; s < n - m + 1; s++){
